@@ -614,6 +614,8 @@ progress {
     max-width: 540px;
   }
   .h4 {font-size: 1em;}
+
+  }  
 }
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
