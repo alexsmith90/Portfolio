@@ -610,13 +610,15 @@ progress {
 }
 
 @media (min-width: 576px) {
+
   .container-sm, .container {
     max-width: 540px;
   }
   .h4 {font-size: 1em;}
 
-  }  
-}
+}  
+
+
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
     max-width: 720px;
