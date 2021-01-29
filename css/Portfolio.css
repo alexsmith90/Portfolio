@@ -13,8 +13,8 @@ font-size: 18px;
     transition: 0.5s;
   }
 
-  ul {
-    position: sticky;  
+/*Start top nav bar styles*/
+ul {
     list-style-type: none;
     margin: 0,0,0,2em;
     padding: 0;
@@ -34,11 +34,13 @@ font-size: 18px;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: all .5s ease;
   }
   
   #active {
     background-color:#646ae8;
-    color: #f5f5f5;  
+    color: #f5f5f5;
+    transition: color .5s ease-in;  
   }
 
   #active a:hover{
@@ -55,7 +57,9 @@ font-size: 18px;
     display: flex;
     justify-content: flex-end;
   }
+/*End top nav bar style*/
 
+/*Start Hero image / intro section with Social links*/
   .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/background_lines.png");
     height: 50%;
@@ -104,6 +108,7 @@ font-size: 18px;
     text-align: center;
     cursor: pointer;
     font-size: 16px;
+    transition: all .8s ease;
   }
   .btn:hover {
     background-color: #646ae8;
@@ -120,10 +125,10 @@ font-size: 18px;
     padding: 2px;
   }
   #linkedin{
-    align-self: flex-end;
+    transform: translate(3em);
   }
   #medium{
-    align-self: flex-start;
+    transform: translate(-3.5em);
   }
  footer {
     position: fixed;
@@ -137,7 +142,13 @@ font-size: 18px;
     color: #131534;
   }
 
-/* Responsive code */
+/* About Me Style Section*/
+
+.AboutMe{
+  margin: 1em;
+}
+
+/* Making the code mobile friendly */
   @media screen and (max-width: 500px) {
     li a {
       display: flex;
@@ -159,4 +170,11 @@ font-size: 18px;
       width: 75%;
       padding: 1em;
       align-items: center;
+    }
+
+    #linkedin{
+      transform: translate(2em);
+    }
+    #medium{
+      transform: translate(-2em);
     }
