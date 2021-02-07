@@ -2,32 +2,46 @@
 <html>
 <head>
     
-    <title>Case Studies</title>
-        
-    <!-- Bootstrap CSS-->
-    <link href="../Portfolio/css/Bootstrap.css"  rel="stylesheet">
-    <!-- Portfolio Specific CSS-->
-    <link href="../Portfolio/css/Portfolio.css"  rel="stylesheet">
-    <!-- Bootstrap Icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+   <!--CSS-->
+     <!--W3 Style Sheet CSS-->     
+     <link rel="stylesheet" href="css/w3.css">
+     <!--Fonts-->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Free Web tutorials">
-    <meta name="keywords" content="HTML, CSS, UX DEsigner, Content Strategy, Strategy, Strategist, Content Marketer">
-    <meta name="author" content="Alex Smith">
-    
-</head>
-    
-<body>
-    <section class="topnavigation">
-        <ul>
-          <li><a href="index.html">Alex Smith</a></li>
-          <div class="flexnav">
-            <li id="active"><a href="case_studies.html">Case Studies</a></li>
-            <li><a href="content_strategy.html">Content Strategy</a></li>
-          </div>
-        </ul>
-    </section>
+     <!--Metadata-->
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="Free Web tutorials">
+     <meta name="keywords" content="HTML, CSS, UX DEsigner, Content Strategy, Strategy, Strategist, Content Marketer">
+     <meta name="author" content="Alex Smith">
+ </head>
+     
+ <body>
+     <!--Navigation Menu, with search tool.
+       I relied on an activity from class to help me with the jQuery. 
+       I can appreacite the current layout, but after working through
+       the assignment I'm reconsidering search tool, I think my site is too 
+       simple to need it. This was a great opportunity to practice jQuery.
+       I also see this as a chance to test the feature with users. 
+     -->
+     <section class="topNavigation">
+     <div class="w3-top">
+       <div class="w3-bar w3-dark-blue w3-card">
+         <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+         <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Alex Smith</a>
+         <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small" id="active">Case Studies</a>
+         <a href="case_studies.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Content Strategy</a>
+         <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right searchButton"><i class="fa fa-search searchIcon"></i></a>
+       </div>
+     </div>
+     <div class="searchBar">
+       <form action="#" id="searchForm">
+       <h1>Filter through my work</h1>
+         <input class="w3-input w3-border" type="text" placeholder="Find something.." required name="Message">
+         <button class="w3-button w3-dark-blue w3-section w3-right" type="submit"><i class="fa fa-search"></i></button>
+       </form>
+     </div>
+   </section>
 
     <h1>Case Studies Page</h1>
 
