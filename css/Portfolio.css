@@ -1,4 +1,11 @@
+html{
+  font-family:'Acumin Pro', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+.img-fluid{
+  max-width: 100%;
+  height: auto;
 
+}
 
 /* About Me Style Section*/
 .headshot {
@@ -10,7 +17,7 @@
  }
 
 .dropShadow{
-  border: 1px solid;
+
   padding: 10px;
   box-shadow: 5px 10px #0d1163;
 }
