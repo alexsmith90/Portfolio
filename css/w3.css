@@ -68,7 +68,7 @@ figure{
     margin:1em 40px
 }
 img{
-    border-style:none
+    border-style:none;
 }
 svg:not(:root){
     overflow:hidden
