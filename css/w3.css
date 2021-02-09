@@ -243,7 +243,7 @@ a{
 }
 .w3-btn{
     border: 3px solid #646ae8;
-    background-color: #f5f5f5;
+    background-color: transparent;
     color: #646ae8;
     outline: 2px;
     padding: .5em .8em;
