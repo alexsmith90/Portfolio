@@ -7,6 +7,19 @@ html{
 
 }
 
+
+/* Parallax Effect */
+
+.hero {
+  background-image: url('../assets/background_lines.png');
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 /* About Me Style Section*/
 .headshot {
   margin-left: auto;
@@ -22,3 +35,9 @@ html{
   box-shadow: 5px 10px #0d1163;
 }
 
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .hero {
+    background-attachment: scroll;
+    min-height: 600px;
+  }
