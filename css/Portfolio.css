@@ -30,9 +30,8 @@ html{
  }
 
 .dropShadow{
-
   padding: 10px;
-  box-shadow: 5px 10px #0d1163;
+  box-shadow: 10px 10px #0d1163;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
