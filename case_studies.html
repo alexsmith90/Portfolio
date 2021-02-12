@@ -11,6 +11,7 @@
     <!-- Bootstrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     
+<<<<<<< Updated upstream
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Free Web tutorials">
     <meta name="keywords" content="HTML, CSS, UX DEsigner, Content Strategy, Strategy, Strategist, Content Marketer">
@@ -34,5 +35,126 @@
     <footer>
         <p>Copyright 2021 | <a href="mailto:ale.smith90@gmail.com">ale.smith90@gmail.com</a></p>
     </footer>
+=======
+     <!--Metadata-->
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="Free Web tutorials">
+     <meta name="keywords" content="HTML, CSS, UX DEsigner, Content Strategy, Strategy, Strategist, Content Marketer">
+     <meta name="author" content="Alex Smith">
+ </head>
+     
+ <body>
+     <!--Navigation Menu, with search tool.
+       I relied on an activity from class to help me with the jQuery. 
+       I can appreacite the current layout, but after working through
+       the assignment I'm reconsidering search tool, I think my site is too 
+       simple to need it. This was a great opportunity to practice jQuery.
+       I also see this as a chance to test the feature with users. 
+     -->
+     <section class="topNavigation">
+     <div class="w3-top">
+       <div class="w3-bar w3-dark-blue w3-card">
+         <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+         <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Alex Smith</a>
+         <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small" id="active">Case Studies</a>
+         <a href="content_strategy.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Content Strategy</a>
+         <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right searchButton"><i class="fa fa-search searchIcon"></i></a>
+         <div class="w3-hide-small w3-right">
+          <a href="https://www.linkedin.com/in/alexsmith90/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+          <a href="https://medium.com/" target="_blank"><i class="fa fa-medium w3-hover-opacity"></i></a>
+         </div>
+       </div>
+     </div>
+     <div class="searchBar">
+       <form action="#" id="searchForm">
+       <h1>Filter through my work</h1>
+         <input class="w3-input w3-border" type="text" placeholder="Find something.." required name="Message">
+         <button class="w3-button w3-dark-blue w3-section w3-right" type="submit"><i class="fa fa-search"></i></button>
+       </form>
+     </div>
+      <!-- Navbar on small screens-->
+     <div id="navDemo" class="w3-bar-block w3-dark-blue w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+      <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Case Studies</a>
+      <a href="content_strategy.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Cotent Strategy</a>
+    </div>
+  </section>
+
+<!--introductary section giving a basic overview of my ux experience-->
+   <section class="Introduction"> 
+    <div class="w3-container w3-content w3-center w3-padding-64 w3-text-dark-blue">
+      <h1 class="w3-wide w3-xxxlarge">Case Studies</h1>
+      <p class="w3-opacity"><i>UX Writing | Research |Testing</i></p>
+      <p class="w3-justify">This is page for my case studies. I want to use this specific section for a sentence or two description of the page. </p>
+    </div>
+  </section>
+
+<!--Case Studies-->
+<section class="caseStudies">
+  
+  <!--Start of Bean Box case study-->
+  <div class="w3-off-white w3-text-dark-blue" id="beanBox">
+    
+    <!--Project Overview-->
+    <div class="w3-container w3-content w3-justify w3-padding">
+      <h1>Bean Box - Checkout Redesign</h1>
+      <p>Overview of the project, the problem statement, and my role in the project</p>
+      <img src="../Portfolio/assets/CaseStudies/beanBox/beanBox-hero.PNG" class="w3-image w3-mobile w3-border w3-border-light-blue" alt="Bean Box homepage">
+    
+    <!--Research Section-->
+    <div class="w3-container w3-content">
+      <h2>Research</h2>
+      <div class="w3-cell w3-mobile w3-padding">
+        <img src="../Portfolio/assets/CaseStudies/beanBox/Curated.PNG" class="w3-image w3-border w3-border-light-blue">
+      </div>
+      <div class="w3-cell w3-mobile w3-justify">
+        <p>Copy on my research will go here.</p> 
+      </div>
+    </div>
+      <h2>Proto-persona</h2>
+      <p>Copy on my Proto-persona will go here.</p> 
+      <h2>Wireframes</h2>
+      <p>Copy on my wireframes will go here.</p> 
+      <h2>Prototyping</h2>
+      <p>Copy on my prototyping process will go here.</p> 
+      <h2>Lessons Learned</h2>
+      <p>Copy on my what I learned will go here.</p>    
+    </div>
+  </div>
+  <!--End of Bean Box case study-->
+  
+  <!--Start of Home Stretch redesign-->
+  <div class="w3-text-dark-blue" id="homeStretch">
+    <div class="w3-container w3-content w3-justify w3-padding">
+    </div>
+  </div>
+  <!--End of Home Stretch redesign-->
+
+    <!--Start of Final Project-->
+    <div class="w3-off-white w3-text-dark-blue">
+      <div class="w3-container w3-content w3-justify w3-padding">
+        <h1>HomeStretch - Non-profit Redesign</h1>
+        <h2>Research</h2>
+        <h2>Proto-persona</h2>
+        <h2>Card Sorting</h2>
+        <h2>Wireframes</h2>
+        <h2>Prototyping</h2>
+        <h2>Lessons Learned</h2>
+      </div>
+    </div>
+    <!--End of Final Project-->
+</section>
+<!--End of Case Studies-->
+
+<footer class="w3-container w3-padding-32 w3-center w3-opacity w3-xlarge w3-light-grey">
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <i class="fa fa-medium w3-hover-opacity"></i>
+    <p class="w3-medium"><a href="mailto:ale.Smith90@gmail.com" target="_blank" class="w3-hover-opacity">ale.Smith@gmail.com</a>|
+      <a href="https://github.com/alexsmith90/Portfolio.git" target="_blank" class="w3-hover-opacity">view my code on Github</a>
+    </p>
+</footer>
+    <!--JavaScript Files-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="Script.js"></script>
+>>>>>>> Stashed changes
 </body>
 </html>
