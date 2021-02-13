@@ -2,95 +2,111 @@
 <html>
 <head>
     <title>Alex Smith</title>
+     <!--CSS-->
+     <!--W3 Style Sheet CSS-->     
+     <link rel="stylesheet" href="css/w3.css">
+     <!--Custom-->
+     <link rel="stylesheet" href="css/Portfolio.css">
+     <!--Fonts-->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <!-- Bootstrap CSS-->
-    <link href="../Portfolio/css/Bootstrap.css"  rel="stylesheet">
-
-    <!-- Bootstrap Icons <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> -->
-
-    <!-- Portfolio Specific CSS-->
-    <link href="../Portfolio/css/Portfolio.css"  rel="stylesheet">
-    
-    <!--Metadata-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="User experience and Content strategy expert">
-    <meta name="keywords" content="HTML, CSS, Web Design, UX Design, Content Strategy, Strategy, Strategist, Content Marketer">
-    <meta name="author" content="Alex Smith">
+     <!--Metadata-->
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="Free Web tutorials">
+     <meta name="keywords" content="HTML, CSS, UX DEsigner, Content Strategy, Strategy, Strategist, Content Marketer">
+     <meta name="author" content="Alex Smith">
+ </head>
 </head>
 
 <body>
     <!--Navigation Menu-->
-   <section class="topNavigation">
-        <ul>
-          <li id="active"><a href="index.html">Alex Smith</a></li>
-          <div class="flexnav">
-            <li><a href="case_studies.html">Case Studies</a></li>
-            <li><a href="content_strategy.html">Content Strategy</a></li>
+    <section class="topnavigation">
+        <div class="w3-top">
+            <div class="w3-bar w3-dark-blue w3-card">
+              <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+              <a href="#" class="w3-bar-item w3-button w3-padding-large">Alex Smith</a>
+              <a href="case_studies.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Case Studies</a>
+              <a href="content_strategy.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Content Strategy</a>
+            <!--Social-->
+              <div class="w3-hide-small w3-right">
+                <a href="https://www.linkedin.com/in/alexsmith90/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+                <a href="https://medium.com/" target="_blank"><i class="fa fa-medium w3-hover-opacity"></i></a>
+              </div>
+            </div>
           </div>
-        </ul>
+          <!-- Navbar on small screens-->
+          <div id="navDemo" class="w3-bar-block w3-dark-blue w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+            <a href="case_studies.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Case Studies</a>
+            <a href="content_strategy.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Cotent Strategy</a>
+          </div>
     </section>
 
-    <!--Introduction Section With Social Links-->
-    <section class="hero-image">
-         <!--Trying to format an introduction message with buttons and social icons using bootstrap rows and columns. 
-            The output is not excatly how I want it. I want the social icons & buttons to be better centered as I scale
-            up in down in screen size. the layout gets a little wonky as I move to different screens. 
-        --> 
-        <!-- 
-        <div class="container-fluid"> 
-            <div class="hero-text">
-                <div class="row">
-                    <h1>Hello,</h1>
-                </div>
-                <div class="row">
-                    <p>I'm a UX Designer and Content Strategist</p>
-                </div>
-                <div class="row">
-                    <a href="../Portfolio/assets/AlexSmithResume.pdf"  target="_blank" class="col-6"><button class="btn">View My Resume</button></a>
-                    <a href="mailto:ale.smith90@gmail.com"  target="_blank" class="col-6"><button class="btn">Send Me An Email</button></a>
-                </div>
-                <div class="row">
-                    <a href="#" target="_blank" class="col-6"><img class="socialicon" src="../Portfolio/assets/linkedin.svg"></a> 
-                    <a href="#" target="_blank" class="col-6"><img class="socialicon" src="../Portfolio/assets/Medium_Symbol_NoPadding.svg"></a>
-                </div>
-            </div>
-        </div> 
-        -->
+    <!--Introduction-->
+    <div class="hero w3-display-container">
+      <div class="w3-display-middle w3-card w3-text-dark-blue w3-padding w3-off-white">
+          <h1 class="w3-center">Welcome!</h1>
+          <p>My name is Alex Smith, and I'm a UX Designer and Content Strategist.</p>
+          <p>Explore my site to view my work.</p>
+          <div class="w3-center"> 
+            <a href="../Portfolio/assets/AlexSmithResume.pdf" target="_blank"><button class="w3-btn">View My Resume</button></a>
+            <a href="mailto:ale.Smith90@gmail.com" target="_blank"><button class="w3-btn">Send Me An Email</button></a>
+          </div>
+      </div>
+    </div>
 
-        <!--I was trying to achieve the same output as the above code, but by using display:flex;
-        The output as about the same I feel like. Buttons and icons would not align how I wanted to 
-        when I was viewing at different sizes
-        -->
-
-         <div class="hero-text">            
-            <h1>Hello,</h1>
-            <p>I'm a UX Designer and Content Strategist</p>
-
-            <div class="gridlayout"> 
-            <a href="..."><button id="resumebtn" class="btn">View My Resume</button></a>
-            <a href="mailto:ale.smith90@gmail.com"><button class="btn">Send Me An Email</button></a>
-            <a href="..."><img class="socialicon" id="linkedin" src="../Portfolio/assets/linkedin.svg"></a> 
-            <a href="..."><img class="socialicon" id="medium" src="../Portfolio/assets/Medium_Symbol_NoPadding.svg"></a>
-            </div>
-        </div>  
-   </section>
 
    <!--About Me Section-->
-   <!--I've applied rows and columns to this section, and not sure if its the best place for it. 
-        I'd like to have this section for a pharagraph or two of text that would wrap around the image. Then 
-        have space below that for an overview of my skills and proficiencies
-        
-        I'm having trouble aligning the copy and image. The image looks off center as I test the site on smaller
-        screen sizes. Also, I don't I have the ability to scroll all the way down on mobile, so I'll lose my
-        copy in the <p> tags behind my footer when I test on some devices.-->
-    <section class="container-fluid" id="aboutMe">
-        <div class="row">
-            <img class="headshot col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xsm-12" src="../Portfolio/assets/Headshot.png" alt="Proffesional Headshot Photo"> 
-            <div class="aboutCopy col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xsm-12">
-                <h2>About Me</h2>
-                <p>I am a passionate digital content designer with over seven years’ experience in creating a wide range of compelling digital assets.
-                  I take pride in my editorial, brand management, design, and collaboration skills.</p>
+   <section class="aboutMeSection">
+    <div class="w3-off-white">
+      <div class="w3-container w3-content w3-padding-64">
+        <h1 class="w3-center w3-text-dark-blue">About Me</h1>
+          <div class="w3-container w3-cell w3-mobile">
+            <img src="../Portfolio/assets/Headshot.png" class="w3-round w3-image" width="1200" height="800">
+          </div>
+          <div class="w3-container w3-cell w3-mobile">
+            <p>This is the about me section and this is placeholder copy. I still need to figure out what I'm going to say here because I never know what to say 
+              when it comes to introducing my self. My favorite color is blue, but that's probably pretty clear. I like coffee, watching movies, and reading. I'll think of some other
+              cool things to say and when I do I will replace this text with what I come up with.
+            </p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+   <!--Skills Section-->
+   <section class="skillsSection">
+    <div class="w3-white">
+      <div class="w3-container w3-content w3-padding-64">
+        <h1 class="w3-center w3-text-dark-blue">My Skills</h1>
+        <p class="w3-justify">In this section, I'm planning to have a sentence or two introducing my work experience and skills. I'm working through some ways to share my skills in an interesting
+          way that's also easy to read.  
+        </p>
+        <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+          <div class="w3-third w3-margin-bottom">
+            <div class="w3-container w3-off-white dropShadow">
+              <p><b>UX Design</b></p>
+              <p>Research</p>
+              <p>UX Writing</p>
+              <p>Testing</p>
             </div>
+          </div>
+          <div class="w3-third w3-margin-bottom">
+            <div class="w3-container w3-off-white dropShadow">
+              <p><b>Content Strategy</b></p>
+              <p>SEO</p>
+              <p>Keyword Research</p>
+              <p>Google Analytics</p>
+            </div>
+          </div>
+          <div class="w3-third w3-margin-bottom">
+            <div class="w3-container w3-off-white dropShadow">
+              <p><b>Graphic Design</b></p>
+              <p>Photoshop</p>
+              <p>InDesign</p>
+              <p>After Effects</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

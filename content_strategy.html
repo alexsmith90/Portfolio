@@ -2,46 +2,113 @@
 <html>
 <head>
     <title>Content Strategy</title>
-   
-    <!-- Bootstrap CSS-->
-    <link href="../Portfolio/css/Bootstrap.css"  rel="stylesheet">
-
-    <!-- Bootstrap Icons 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">-->
-
-    <!-- Portfolio Specific CSS-->  
-    <link href="../Portfolio/css/Portfolio.css"  rel="stylesheet">
-
-    <!--Meta data-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="User experience and Content strategy expert">
-    <meta name="keywords" content="HTML, CSS, Web Design, UX Design, Content Strategy, Strategy, Strategist, Content Marketer">
-    <meta name="author" content="Alex Smith">
-  
-</head>
+     <!--CSS-->
+     <!--W3 Style Sheet CSS-->     
+     <link rel="stylesheet" href="css/w3.css">
+     <!--Custom-->
+     <link rel="stylesheet" href="css/Portfolio.css">
+     <!--Fonts-->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-
+     <!--Metadata-->
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="Free Web tutorials">
+     <meta name="keywords" content="HTML, CSS, UX DEsigner, Content Strategy, Strategy, Strategist, Content Marketer">
+     <meta name="author" content="Alex Smith">
+ </head>
+</head>
 
 <body>
-  <!--Navigation Menu-->
- <section class="topNavigation">
-      <ul>
-        <li id="active"><a href="index.html">Alex Smith</a></li>
-        <div class="flexnav">
-          <li><a href="case_studies.html">Case Studies</a></li>
-          <li><a href="content_strategy.html">Content Strategy</a></li>
-        </div>
-      </ul>
+    <!--Navigation Menu-->
+    <section class="topnavigation">
+        <div class="w3-top">
+            <div class="w3-bar w3-dark-blue w3-card">
+              <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+              <a href="#" class="w3-bar-item w3-button w3-padding-large">Alex Smith</a>
+              <a href="case_studies.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Case Studies</a>
+              <a href="content_strategy.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Content Strategy</a>
+            <!--Social-->
+              <div class="w3-hide-small w3-right">
+                <a href="https://www.linkedin.com/in/alexsmith90/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+                <a href="https://medium.com/" target="_blank"><i class="fa fa-medium w3-hover-opacity"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- Navbar on small screens-->
+          <div id="navDemo" class="w3-bar-block w3-dark-blue w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+            <a href="case_studies.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Case Studies</a>
+            <a href="content_strategy.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Cotent Strategy</a>
+          </div>
+    </section>
+
+    <!--Introduction-->
+    <div class="hero w3-display-container">
+      <div class="w3-display-middle w3-card w3-text-dark-blue w3-padding w3-off-white">
+          <h1 class="w3-center">Welcome!</h1>
+          <p>My name is Alex Smith, and I'm a UX Designer and Content Strategist.</p>
+          <p>Explore my site to view my work.</p>
+          <div class="w3-center"> 
+            <a href="../Portfolio/assets/AlexSmithResume.pdf" target="_blank"><button class="w3-btn">View My Resume</button></a>
+            <a href="mailto:ale.Smith90@gmail.com" target="_blank"><button class="w3-btn">Send Me An Email</button></a>
+          </div>
+      </div>
+    </div>
+
+
+   <!--About Me Section-->
+   <section class="aboutMeSection">
+    <div class="w3-off-white">
+      <div class="w3-container w3-content w3-padding-64">
+        <h1 class="w3-center w3-text-dark-blue">About Me</h1>
+          <div class="w3-container w3-cell w3-mobile">
+            <img src="../Portfolio/assets/Headshot.png" class="w3-round w3-image" width="1200" height="800">
+          </div>
+          <div class="w3-container w3-cell w3-mobile">
+            <p>This is the about me section and this is placeholder copy. I still need to figure out what I'm going to say here because I never know what to say 
+              when it comes to introducing my self. My favorite color is blue, but that's probably pretty clear. I like coffee, watching movies, and reading. I'll think of some other
+              cool things to say and when I do I will replace this text with what I come up with.
+            </p>
+          </div>
+      </div>
+    </div>
   </section>
-  <!--Page heading, and background on skillset-->
-  <section class="Introduction"> 
-    <div class="container-fluid">
-      <h2 class="row">Content Strategy</h2>
-      <p class="row"><i>Writing | SEO | Kewword Research</i></p>
-      <p class="row">In this section, I would speak to my familarity with content strategy. I would share my experience with writing copy, editing video and photos,
-        and working with a marketing team to optomize the content for SEO. I would write this section in a way tht makes me sound super duper smart, so that people will 
-        want to give me a bunch of really cool jobs and stuff! that would be really neat :).
-      </p>
+
+   <!--Skills Section-->
+   <section class="skillsSection">
+    <div class="w3-white">
+      <div class="w3-container w3-content w3-padding-64">
+        <h1 class="w3-center w3-text-dark-blue">My Skills</h1>
+        <p class="w3-justify">In this section, I'm planning to have a sentence or two introducing my work experience and skills. I'm working through some ways to share my skills in an interesting
+          way that's also easy to read.  
+        </p>
+        <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+          <div class="w3-third w3-margin-bottom">
+            <div class="w3-container w3-off-white dropShadow">
+              <p><b>UX Design</b></p>
+              <p>Research</p>
+              <p>UX Writing</p>
+              <p>Testing</p>
+            </div>
+          </div>
+          <div class="w3-third w3-margin-bottom">
+            <div class="w3-container w3-off-white dropShadow">
+              <p><b>Content Strategy</b></p>
+              <p>SEO</p>
+              <p>Keyword Research</p>
+              <p>Google Analytics</p>
+            </div>
+          </div>
+          <div class="w3-third w3-margin-bottom">
+            <div class="w3-container w3-off-white dropShadow">
+              <p><b>Graphic Design</b></p>
+              <p>Photoshop</p>
+              <p>InDesign</p>
+              <p>After Effects</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
