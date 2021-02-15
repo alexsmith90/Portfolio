@@ -32,6 +32,12 @@
   box-shadow: 10px 10px #0d1163;
 }
 
+/* Making proto-persona images circular*/
+.personaImages{
+  border-radius: 50%;
+}
+
+
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
   .hero {
