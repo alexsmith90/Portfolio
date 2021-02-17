@@ -2,12 +2,12 @@
 <html>
 <head>
     <title>Content Strategy</title>
-     <!--CSS-->
-     <!--W3 Style Sheet CSS-->     
+    
+    <!--CSS-->
+    <!--W3 Style Sheet CSS-->     
     <link rel="stylesheet" href="css/w3.css">
-         <!--Custom-->
-         <link rel="stylesheet" href="css/Portfolio.css">
-
+    <!--Custom-->
+    <link rel="stylesheet" href="css/Portfolio.css">
     <!--Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,13 +20,7 @@
 </head>
     
 <body>
-    <!--Navigation Menu, with search tool.
-      I relied on an activity from class to help me with the jQuery. 
-      I can appreacite the current layout, but after working through
-      the assignment I'm reconsidering search tool, I think my site is too 
-      simple to need it. This was a great opportunity to practice jQuery.
-      I also see this as a chance to test the feature with users. 
-    -->
+    <!--Top Navigation-->
     <section class="topNavigation">
     <div class="w3-top">
       <div class="w3-bar w3-dark-blue w3-card">
@@ -35,10 +29,11 @@
         <a href="case_studies.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small" id="active">Case Studies</a>
         <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Content Strategy</a>
         <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right searchButton"><i class="fa fa-search searchIcon"></i></a>
+    <!--Social Links-->
         <div class="w3-hide-small w3-right">
           <a href="https://www.linkedin.com/in/alexsmith90/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-          <a href="https://medium.com/" target="_blank"><i class="fa fa-medium w3-hover-opacity"></i></a>
-         </div>
+          <a href="https://medium.com/@alexsmith_writes" target="_blank"><i class="fa fa-medium w3-hover-opacity"></i></a>
+        </div>
       </div>
     </div>
     <div class="searchBar">
@@ -54,11 +49,7 @@
       <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Cotent Strategy</a>
     </div>
   </section>
-  
-  <!--Page heading, and copy that gives an overview of my skill set.
-    I really like this heading, I like having space where I can put
-    key skills or tools I'm proficient with. 
-  -->
+  <!--Start of Page Overview - Page heading and description-->
   <section class="Introduction"> 
     <div class="w3-container w3-content w3-center w3-padding-64">
       <h2 class="w3-wide">Content Strategy</h2>
@@ -70,11 +61,13 @@
       </p>
     </div>
   </section>
-
+  <!--End of Page Overview Section-->
+  <!--Portfolio Section-->
   <section class="portfolioSection">
     <div class="w3-off-white" id="tour">
       <div class="w3-container w3-content w3-padding-64" id="tourFade">
         <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <!--Start of high value Card-->
           <div class="w3-third w3-margin-bottom">
               <img src="../Portfolio/assets/ContentStrategy/HighValue_thumb.png" alt="Rings" style="width:100%">
               <div class="w3-container w3-white">
@@ -86,6 +79,8 @@
                <a href="../Portfolio/assets/ContentStrategy/UPSC16-073_US HV Product Overview Sales Sheet_p6_MECH_LR.pdf" target="_blank"><button class="w3-btn w3-margin-bottom">Read The White Paper</button></a> 
               </div>
           </div>
+        <!--End of high value card-->
+        <!--Start of MSJA Card-->
           <div class="w3-third w3-margin-bottom">
             <img src="../Portfolio/assets/ContentStrategy/CutAbove_thumb.PNG" alt="MJSA Journal logo" style="width:100%">
             <div class="w3-container w3-white">
@@ -97,6 +92,8 @@
               <a href="../Portfolio/assets/ContentStrategy/A Cut Above_April2020.pdf" target="_blank"><button class="w3-btn w3-margin-bottom">Read the Article</button></a>
             </div>
           </div>
+        <!--End of MJSA Card-->
+        <!--Start of Bottom Line card-->
           <div class="w3-third w3-margin-bottom">
             <img src="../Portfolio/assets/ContentStrategy/BottomLine_thumb.png" alt="The Bottomline blog logo" style="width:100%">
             <div class="w3-container w3-white">
@@ -107,16 +104,21 @@
               <a href="https://upscapital.com/resources/covid-19-next-normal-digital-solutions/" target="_blank"><button class="w3-btn w3-margin-bottom">Read The Blog Post</button></a>
             </div>
           </div>
+        <!--End of Bottom Line card-->
         </div>
       </div>
     </div>
   </section>
-
+  <!--End Portfolio Section-->
   <!--footer-->
   <footer class="w3-container w3-padding-32 w3-center w3-opacity w3-xlarge w3-light-grey">
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <i class="fa fa-medium w3-hover-opacity"></i>
-    <p class="w3-medium"><a href="mailto:ale.Smith90@gmail.com" target="_blank" class="w3-hover-opacity">ale.Smith@gmail.com</a>|
+  <!--Social Links-->
+  <a href="https://www.linkedin.com/in/alexsmith90/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  <a href="https://medium.com/@alexsmith_writes" target="_blank"><i class="fa fa-medium w3-hover-opacity"></i></a>
+  <p class="w3-medium">
+  <!--Email-->
+      <a href="mailto:ale.Smith90@gmail.com" target="_blank" class="w3-hover-opacity">ale.Smith@gmail.com</a>|
+  <!--Github-->
       <a href="https://github.com/alexsmith90/Portfolio.git" target="_blank" class="w3-hover-opacity">view my code on Github</a>
     </p>
   </footer>

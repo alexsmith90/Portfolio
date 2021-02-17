@@ -37,10 +37,19 @@
   border-radius: 50%;
 }
 
+iframe{
+  width: 500px;
+  height: 500px;
+}
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
   .hero {
     background-attachment: scroll;
     min-height: 600px;
+  }
+
+  iframe{
+    width: auto;
+    height: auto;
   }
