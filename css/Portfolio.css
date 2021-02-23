@@ -48,8 +48,14 @@ iframe{
     background-attachment: scroll;
     min-height: 600px;
   }
-
-  iframe{
+/*
+  .iframe{
     width: auto;
     height: auto;
   }
+*/
+
+#illustration{
+  width: 400;
+  height: 400;
+}
