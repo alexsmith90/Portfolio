@@ -145,6 +145,7 @@ ul {
 }
 /* start about me section*/
 
+<<<<<<< Updated upstream
 /* Making the code mobile friendly */
   @media screen and (max-width: 500px) {
     li a {
@@ -168,6 +169,34 @@ ul {
       padding: 1em;
       align-items: center;
     }
+=======
+/* text decoration for links */
+.url:link, .url:visited{
+  color: #0d1163;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: none;
+}
+
+.url:visited{
+  color: #646ae8;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: none;
+}
+
+.url:link:active,.url:visited:active {
+  color: #646ae8;
+  text-decoration: underline;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .hero {
+    background-attachment: scroll;
+    min-height: 600px;
+  }
+>>>>>>> Stashed changes
 
     #linkedin{
       transform: translate(2em);
