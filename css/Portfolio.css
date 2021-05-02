@@ -52,14 +52,14 @@ iframe{
 
 .url:visited{
   color: #646ae8;
-  text-decoration: underline;
+  text-decoration: none;
   cursor: pointer;
   padding: none;
 }
 
 .url:link:active,.url:visited:active {
   color: #646ae8;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
